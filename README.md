@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <td style="padding:10px;">APK Debug</td>
-      <td style="padding:10px;"><a href="[https://tu-enlace.com](https://github.com/Dnatio/MiApp/blob/main/app-debug.apk)" style="color:#4aa3ff;">Enlace al APK</a></td>
+      <td style="padding:10px;"><a href="https://github.com/Dnatio/MiApp/blob/main/app-debug.apk" style="color:#4aa3ff;">Enlace al APK</a></td>
     </tr>
   </tbody>
 </table>
@@ -190,9 +190,9 @@ APK Debug
 
 El archivo ejecutable para pruebas (debug) se puede descargar directamente desde este enlace. Asegúrate de subir el archivo a esta ubicación dentro de tu repositorio:
 
-  <tr>
+ <tr>
       <td style="padding:10px;">APK Debug</td>
-      <td style="padding:10px;"><a href="[https://tu-enlace.com](https://github.com/Dnatio/MiApp/blob/main/app-debug.apk)" style="color:#4aa3ff;">Enlace al APK</a></td>
+      <td style="padding:10px;"><a href="https://github.com/Dnatio/MiApp/blob/main/app-debug.apk" style="color:#4aa3ff;">Enlace al APK</a></td>
     </tr>
 
 
