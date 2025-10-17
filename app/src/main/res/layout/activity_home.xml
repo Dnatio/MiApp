@@ -61,7 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Ir a Perfil (resultado)" />
+                    android:text="Ir a Perfil" />
 
                 <!-- Botón: Abrir sitio web -->
                 <Button
