@@ -48,9 +48,8 @@ Target SDK: 34
 
 - Intents Implementados
 
-A. Intents Implícitos (5/5)
-
-Los Intents implícitos abren componentes en otras aplicaciones del sistema.
+<h2>A. Intents Implícitos (5/5)</h2>
+<p>Los <b>Intents implícitos</b> abren componentes en otras aplicaciones del sistema (por ejemplo: navegador, cámara, compartir, etc.).</p>
 
 <table style="width:100%; border-collapse: collapse; background-color:#1e1e1e; color:#ffffff;">
   <thead>
@@ -64,62 +63,64 @@ Los Intents implícitos abren componentes en otras aplicaciones del sistema.
   <tbody>
     <tr>
       <td style="padding:10px;">1</td>
-      <td style="padding:10px;">Abrir Ubicación en Google Maps</td>
-      <td style="padding:10px;">MainActivity</td>
-      <td style="padding:10px;">
-        1. Ir a MainActivity.<br>
-        2. Tocar el botón que dispara la acción de Maps.<br>
-        3. Verificar que se abre Google Maps mostrando la <b>Torre Eiffel</b> (<code>geo:0,0?q=Torre+Eiffel</code>).
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:10px;">2</td>
       <td style="padding:10px;">Ver una Página Web Específica</td>
       <td style="padding:10px;">MainActivity</td>
       <td style="padding:10px;">
         1. Ir a MainActivity.<br>
         2. Tocar el botón que dispara la acción de Web.<br>
-        3. Verificar que se abre el navegador mostrando 
-        <a href="https://www.google.com" style="color:#4aa3ff;">https://www.santotomas.cl/</a>.
+        3. Verificar que se abre el navegador predeterminado mostrando un sitio web (ej: 
+        <a href="https://www.google.com" style="color:#4aa3ff;">https://www.google.com</a>).
       </td>
     </tr>
     <tr>
-      <td style="padding:10px;">3</td>
-      <td style="padding:10px;">Llamar (Mostrar Marcador)</td>
-      <td style="padding:10px;">MainActivity</td>
-      <td style="padding:10px;">
-        1. Ir a MainActivity.<br>
-        2. Tocar el botón que dispara la acción de Llamar.<br>
-        3. Verificar que se abre la app del teléfono con <code>tel:123456789</code> precargado (usando <code>Intent.ACTION_DIAL</code>).
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:10px;">4</td>
+      <td style="padding:10px;">2</td>
       <td style="padding:10px;">Enviar Correo Electrónico</td>
       <td style="padding:10px;">MainActivity</td>
       <td style="padding:10px;">
         1. Ir a MainActivity.<br>
         2. Tocar el botón que dispara la acción de Correo.<br>
-        3. Verificar que se abre la app de correo con el campo <b>Para:</b> <code>ejemplo@mail.com</code> y el asunto <b>"Feedback de App"</b>.
+        3. Verificar que se abre la app de correo predeterminada con el campo 
+        <b>"Para:"</b> (<code>ejemplo@mail.com</code>) y el asunto precargados.
       </td>
     </tr>
     <tr>
-      <td style="padding:10px;">5</td>
+      <td style="padding:10px;">3</td>
       <td style="padding:10px;">Tomar Fotografía con Cámara</td>
       <td style="padding:10px;">CamaraActivity</td>
       <td style="padding:10px;">
         1. Ir a MainActivity y tocar el botón "Cámara" (navegación explícita a CamaraActivity).<br>
-        2. En CamaraActivity, tocar <b>"Tomar Foto"</b>.<br>
-        3. Aceptar permisos (si es necesario).<br>
+        2. En CamaraActivity, tocar "Tomar Foto".<br>
+        3. Aceptar permisos.<br>
         4. Verificar que se abre la cámara del sistema (<code>MediaStore.ACTION_IMAGE_CAPTURE</code>).
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:10px;">4</td>
+      <td style="padding:10px;">Compartir Texto con otras Apps</td>
+      <td style="padding:10px;">HomeActivity</td>
+      <td style="padding:10px;">
+        1. Ir a HomeActivity (después de Login).<br>
+        2. Tocar el botón "Compartir".<br>
+        3. Verificar que se abre el menú de compartir de Android, permitiendo seleccionar una app (ej: WhatsApp, Gmail) con un texto precargado.
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:10px;">5</td>
+      <td style="padding:10px;">Mostrar Notificación de Linterna</td>
+      <td style="padding:10px;">HomeActivity</td>
+      <td style="padding:10px;">
+        1. Ir a HomeActivity.<br>
+        2. Tocar el botón "Encender Linterna".<br>
+        3. Verificar que la linterna se enciende y el botón cambia a "Apagar Linterna". Esto demuestra la interacción con el hardware del sistema (flash/cámara).
       </td>
     </tr>
   </tbody>
 </table>
 
-B. Intents Explícitos (3/3)
+<br>
 
-Los Intents explícitos navegan entre los componentes internos de nuestra propia aplicación.
+<h2>B. Intents Explícitos (3/3)</h2>
+<p>Los <b>Intents explícitos</b> navegan entre los componentes internos de nuestra propia aplicación.</p>
 
 <table style="width:100%; border-collapse: collapse; background-color:#1e1e1e; color:#ffffff;">
   <thead>
@@ -137,7 +138,7 @@ Los Intents explícitos navegan entre los componentes internos de nuestra propia
       <td style="padding:10px;">Navegación y paso de datos</td>
       <td style="padding:10px;">
         1. Ingresar credenciales correctas (ej: <code>estudiante@st.cl / 123456</code>).<br>
-        2. Tocar <b>"Ingresar"</b>.<br>
+        2. Tocar "Ingresar".<br>
         3. Verificar que se abre <b>HomeActivity</b> y se muestra el email en el mensaje de bienvenida.
       </td>
     </tr>
@@ -146,19 +147,16 @@ Los Intents explícitos navegan entre los componentes internos de nuestra propia
       <td style="padding:10px;">HomeActivity → PerfilActivity</td>
       <td style="padding:10px;">Con Resultado (<code>ActivityResult</code>)</td>
       <td style="padding:10px;">
-        1. En HomeActivity, tocar el botón <b>"Editar Perfil"</b>.<br>
-        2. En PerfilActivity, ingresar un nuevo nombre y tocar <b>"Guardar"</b>.<br>
-        3. Verificar que HomeActivity se actualiza con el nombre editado, usando el resultado devuelto por PerfilActivity.
+        1. En HomeActivity, tocar el botón "Editar Perfil".<br>
+        2. En PerfilActivity, ingresar un nuevo nombre (ej: "Juan Pérez") y tocar "Guardar".<br>
+        3. Verificar que HomeActivity se actualiza y muestra el nuevo nombre usando el resultado devuelto.
       </td>
     </tr>
     <tr>
       <td style="padding:10px;">3</td>
-      <td style="padding:10px;">MainActivity → CamaraActivity</td>
+      <td style="padding:10px;">MainActivity → ConfigActivity</td>
       <td style="padding:10px;">Navegación Simple</td>
-      <td style="padding:10px;">
-        1. Tocar el botón <b>"Cámara"</b> en MainActivity.<br>
-        2. Verificar que se abre la pantalla <b>CamaraActivity</b> (la cual gestiona la captura de la foto).
-      </td>
+      <td style="padding:10px;">—</td>
     </tr>
   </tbody>
 </table>
@@ -188,7 +186,7 @@ Aquí se muestran las interfaces principales y el uso de los Intents implementad
 
 APK Debug
 
-El archivo ejecutable para pruebas (debug) se puede descargar directamente desde este enlace. Asegúrate de subir el archivo a esta ubicación dentro de tu repositorio:
+El archivo ejecutable para pruebas (debug) se puede descargar directamente desde este enlace.
 
  <tr>
       <td style="padding:10px;">APK Debug</td>
