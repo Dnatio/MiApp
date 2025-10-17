@@ -69,7 +69,7 @@ Target SDK: 34
         1. Ir a MainActivity.<br>
         2. Tocar el botón que dispara la acción de Web.<br>
         3. Verificar que se abre el navegador predeterminado mostrando un sitio web (ej: 
-        <a href="https://www.google.com" style="color:#4aa3ff;">https://www.google.com</a>).
+        <a href="https://www.santotomas.cl" style="color:#4aa3ff;">https://www.santotomas.cl</a>).
       </td>
     </tr>
     <tr>
@@ -137,7 +137,7 @@ Target SDK: 34
       <td style="padding:10px;">LoginActivity → HomeActivity</td>
       <td style="padding:10px;">Navegación y paso de datos</td>
       <td style="padding:10px;">
-        1. Ingresar credenciales correctas (ej: <code>estudiante@st.cl / 123456</code>).<br>
+        1. Ingresar credenciales correctas (ej: <code>ejemplo@gmail.cl / 123456</code>).<br>
         2. Tocar "Ingresar".<br>
         3. Verificar que se abre <b>HomeActivity</b> y se muestra el email en el mensaje de bienvenida.
       </td>
